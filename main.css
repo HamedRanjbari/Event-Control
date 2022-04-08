@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+#divText{
+   height: 100vh;
+   width: 100vw; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#text{
+    font-size: 2rem;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 3rem;
+    border-radius: 15px;
+}
+#eventInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+#mainCard{
+    font-size: 5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+#Information{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    align-items: center;
+    margin-top: 5rem;
+}
+#eventName,#eventLocation,#eventCode,#eventKey{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+#eventName p:first-child,
+#eventLocation p:first-child,
+#eventCode p:first-child,
+#eventKey p:first-child{
+    background-color: aqua;
+    color: #000 !important;
+    font-weight: 700;
+    padding: .3rem .5rem;
+    border-radius: 10px;
+    margin-bottom: .5rem;
+}
+#eventName,
+#eventLocation,
+#eventCode,
+#eventKey{
+    background-color: rgb(166, 166, 166) !important;
+    color: #000 !important;
+    height: 80px;
+    font-weight: 700;
+    padding: .3rem .5rem;
+    border-radius: 10px;
+    transition: all .7s ease-in-out;
+}
+#eventName:hover,
+#eventLocation:hover,
+#eventCode:hover,
+#eventKey:hover{
+    box-shadow: 2px 5px 5px rgb(83, 83, 83);
+    transform:translateY(-10px);
+}
